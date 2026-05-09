@@ -1,0 +1,15 @@
+Install the actual file into /tmp/seed
+mkdir /tmp/seed /tmp/leech
+
+install the real file into /tmp/seed
+make sure /tmp/leech is an empty dir
+
+run these two commands:
+make run-seeder TORRENT=deb.torrent DIR_SEEDER=/tmp/seed
+make run-leecher TORRENT=deb.torrent DIR_LEECHER=/tmp/leech
+
+check hash:
+sha256sum /tmp/seed/Unigine_Heaven-4.0.dmg /tmp/leech/Unigine_Heaven-4.0.dmg
+
+Command to test tracker.c:
+./test_tracker debian.torrent flatland.torrent
