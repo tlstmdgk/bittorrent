@@ -1,4 +1,4 @@
-# Final Class Project: BitTorrent
+BitTorrent
 
 ## Description
 A peer-to-peer BitTorrent client implementation in C. Only supports downloading as of May 9, 2026. 
